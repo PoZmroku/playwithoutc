@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name= "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css')}}">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+		<style>
+   			a { 
+    			text-decoration: none;
+   			} 
+  </style>
+	</head>
+	<body>
+
+		<header class= "intro">
+			<div class="container">
+				<div class="header_inner">
+					<div class="heder_logo"><a href = index.html><div class="main-text" data-aos="zoom-in">PlayWithoutCringe</div></a></div>
+					<nav class="nav">
+						<a class="nav_link" href="index.html">Главная</a>
+						<a class="nav_link" href="create-article.html">Создать статью</a>
+						<a class="nav_link" href="signinpage.html">Вход</a>
+						<a class="nav_link" href="aboutas.html">О нас</a>
+					</nav>
+
+				<div class="container mt-4">
+					<div class="intro_title">
+					<h1 style="color: aliceblue;">{{ article.title }}</h1>
+					</div>
+				</div>
+
+                <div class="alert">
+					<p style="color: aliceblue;">{{ article.text }}</p>
+					<p style="color: aliceblue;"><b>Дата: {{ article.date.date() }}</b></p>
+                </div>
+
+
+            </header>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer_inner">
+						<div class="footer_block">
+							<h4 class="footer_title">Адрес</h4>
+							<address class="footer_address">
+								<a href="https://goo.gl/maps/8h8Ck6fhiQDvXWZUA">г.Челябинск ул. Рождественского 7</a>
+							</address>
+						</div>
+						<div class="footer_block">
+							<h4 class="footer_title">Автор сайта</h4>
+							<a href="https://vk.com/ttky_g"><img src="https://pngicon.ru/file/uploads/vk-64x64.png"/></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+	
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                  AOS.init();
+            </script>
+        </body>
+    </html>
